@@ -10,6 +10,7 @@ import java.util.List;
  * Created by Peter Kurfer on 11/19/17.
  */
 
+@SuppressWarnings({"WeakerAccess", "unused"})
 public class Meal {
 	private int id;
 	private String name;
