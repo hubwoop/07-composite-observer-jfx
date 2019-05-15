@@ -6,9 +6,6 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by Peter Kurfer on 11/19/17.
- */
 
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class Meal {
@@ -52,6 +49,8 @@ public class Meal {
 	public void setNotes(List<String> notes) {
 		this.notes = notes;
 	}
+
+	public boolean isVegetarian() { return notes.stream().noneMatch(note -> note.contains("fleisch")); }
 
 	@Override
 	public boolean equals(Object o) {
